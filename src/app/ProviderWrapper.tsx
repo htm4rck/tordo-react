@@ -1,6 +1,6 @@
 'use client';
 
-import { ReactElement } from 'react';
+import { ReactNode } from 'react';
 
 // next
 import { SessionProvider } from 'next-auth/react';
@@ -15,8 +15,7 @@ import ScrollTop from 'components/ScrollTop';
 import Snackbar from 'components/@extended/Snackbar';
 
 // ==============================|| PROVIDER WRAPPER  ||============================== //
-
-export default function ProviderWrapper({ children }: { children: ReactElement }) {
+export default function ProviderWrapper({ children }: { children: ReactNode }) {
   return (
     <ConfigProvider>
       <ThemeCustomization>

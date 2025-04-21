@@ -1,22 +1,20 @@
-import type { Metadata } from 'next';
-
+// src/app/layout.tsx
 import './globals.css';
-
-// project-imports
 import ProviderWrapper from './ProviderWrapper';
+import type { Metadata } from 'next';
+import type { ReactNode } from 'react';
 
 export const metadata: Metadata = {
-  title: 'Able Pro Material UI Next JS Dashboard Template',
-  description:
-    'Able Pro React Admin Template, built with Material UI, React, and React Router, offers a modern UI, seamless performance, and powerful customization for any web application.'
+  title: 'Able Pro Dashboard',
+  description: 'Dashboard built with Able Pro and Next.js',
 };
 
-export default function RootLayout({ children }: { children: React.ReactElement }) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
-      <body>
-        <ProviderWrapper>{children}</ProviderWrapper>
-      </body>
+    <html lang="es">
+    <body>
+    <ProviderWrapper>{children}</ProviderWrapper>
+    </body>
     </html>
   );
 }

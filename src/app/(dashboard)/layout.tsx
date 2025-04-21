@@ -1,13 +1,8 @@
-// project-imports
-import DashboardLayout from 'layout/DashboardLayout';
-import AuthGuard from 'utils/route-guard/AuthGuard';
+// src/app/(dashboard)/layout.tsx
+'use client';
 
-// ==============================|| DASHBOARD LAYOUT ||============================== //
+import DashboardLayout from '../../layout/DashboardLayout';
 
-export default function Layout({ children }: { children: React.ReactNode }) {
-  return (
-    <AuthGuard>
-      <DashboardLayout>{children}</DashboardLayout>
-    </AuthGuard>
-  );
+export default function DashboardGroupLayout({ children }: { children: React.ReactNode }) {
+  return <DashboardLayout>{children}</DashboardLayout>;
 }
