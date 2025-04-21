@@ -1,0 +1,25 @@
+# Node modules locales (se instalan dentro del contenedor)
+node_modules
+npm-debug.log
+yarn-error.log
+
+# Archivos y carpetas del sistema
+.DS_Store
+Thumbs.db
+
+# Git
+.git
+.gitignore
+
+# Configuraciones locales
+.env
+.env.*local
+
+# Salidas del build anteriores
+.next
+out
+dist
+
+# Archivos temporales
+*.swp
+*.swo
